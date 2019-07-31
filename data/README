@@ -1,0 +1,6 @@
+Temperature:
+GLB.Ts+dSST.csv: 				https://data.giss.nasa.gov/gistemp/tabledata_v4/GLB.Ts+dSST.csv
+Monthly Mean Global Surface Temperature.csv: 	https://data.giss.nasa.gov/gistemp/graphs_v4/graph_data/Monthly_Mean_Global_Surface_Temperature/graph.csv
+
+CO2:
+mlo_station_data_set.zip 			http://scrippsco2.ucsd.edu/data/atmospheric_co2/mlo
