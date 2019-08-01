@@ -28,7 +28,7 @@ def paint_temperature():
     curr_temperature_date, curr_temperature = temperature.fetch_current_mean_temperature()
 
     plt.figure(figsize=(5, 5))
-    plt.ylabel('mean temperature increase')
+    plt.ylabel('global mean temperature increase')
 
     plt.ylim(temperature.MEAN_TEMPERATURE_PARIS, temperature.MEAN_TEMPERATURE_2DEGREE)
 

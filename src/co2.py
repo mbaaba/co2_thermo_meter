@@ -19,3 +19,8 @@ def fetch_current_co2():
     co2 = last_line[1].lstrip()
     return date, float(co2)
 
+# def _get_month(num):
+#     month_map = {
+#         "04": "1", "13": "2", "21": "3", "29": "4", "38": "5", "46": "6", "54": "7", "63": "8",
+#         "71": "9", "79": "10", "88": "11", "96": "12"
+#     }
