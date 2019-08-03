@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Paris Climate</title>
+<!--    <script src="../../paint.js"></script>-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='layout.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='climate.css') }}">
+{% block javascript %}
+    <script type="text/javascript">
+        {% include "svg.js" %}
+    </script>
+    <script type="text/javascript">
+        {% include "paint.js" %}
+    </script>
+{% endblock %}
+</head>
+<body>
+<!--    <img-->
+<!--        src ="{{ url_for('static', filename = 'co2.svg') }}"-->
+<!--        alt="co2 data"/>-->
+<!--    <img-->
+<!--        src="{{ url_for('static', filename = 'mean_temperature.svg') }}"-->
+<!--        alt="mean temperature data"/>-->
+    <div class="hbox">
+        <div class="svg_canvas debug" id="co2_graph"></div>
+        <div class="svg_canvas debug"  id="temperature_graph"></div>
+    </div>
+</body>
+</html>
+

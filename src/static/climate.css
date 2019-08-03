@@ -1,0 +1,13 @@
+body {
+    background-color: antiquewhite;
+}
+.hbox.debug{
+    border-style: solid;
+    border-color: blue;
+}
+
+.svg_canvas.debug{
+    border-style: solid;
+    border-color: red;
+    border-width: thin;
+}

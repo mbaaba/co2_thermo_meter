@@ -1,0 +1,5 @@
+#!/bin/sh
+#cd /home/framlin/pwd
+export FLASK_APP=get.py
+export FLASK_DEBUG=1
+flask run --host=0.0.0.0
