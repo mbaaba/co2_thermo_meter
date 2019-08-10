@@ -11,3 +11,8 @@ body {
     border-color: red;
     border-width: thin;
 }
+
+#climate_state {
+    background-color: #faf0e6;
+}
+

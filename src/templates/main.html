@@ -3,29 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <title>Paris Climate</title>
-<!--    <script src="../../paint.js"></script>-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='normalize.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='layout.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='climate.css') }}">
-{% block javascript %}
+    {% block javascript %}
     <script type="text/javascript">
         {% include "svg.js" %}
     </script>
     <script type="text/javascript">
         {% include "paint.js" %}
     </script>
-{% endblock %}
+    {% endblock %}
 </head>
 <body>
-<!--    <img-->
-<!--        src ="{{ url_for('static', filename = 'co2.svg') }}"-->
-<!--        alt="co2 data"/>-->
-<!--    <img-->
-<!--        src="{{ url_for('static', filename = 'mean_temperature.svg') }}"-->
-<!--        alt="mean temperature data"/>-->
-    <div class="hbox">
-        <div class="svg_canvas debug" id="co2_graph"></div>
-        <div class="svg_canvas debug"  id="temperature_graph"></div>
+<div id="paris" class="hbox">
+<div id="climate_state" class="vbox">
+    <h1>Paris Climate Agreement</h1>
+    <div id="climate_box" class="vbox">
+        <div class="hbox">
+            <div class="description"> The Paris Agreement's long-term goal is to keep the increase in global average temperature to well below 2 K above pre-industrial levels;
+                and to limit the increase to 1.5 K,
+                since this would substantially reduce the risks and effects of climate change.
+                <br>An increase of 2 K is related to 450 ppm CO<sub>2</sub> - concentration.
+                <h4>These graphs display the latest mesasurments</h4>
+            </div>
+
+        </div>
+
+        <div id="graph_box" class="hbox">
+            <div class="vbox">
+                <div class="svg_canvas" id="co2_graph"></div>
+            </div>
+            <div class="vbox">
+                <div class="svg_canvas"  id="temperature_graph"></div>
+            </div>
+        </div>
+
     </div>
+</div>
+
+</div>
 </body>
 </html>
 
